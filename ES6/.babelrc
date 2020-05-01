@@ -1,0 +1,5 @@
+{
+    "presets": ["@babel/preset-env"]
+}
+//o preset env percebe o ambiente
+//de desenvolvimento e converte  o codigo
