@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Curso de Javascript</title>
+    </head>
+    <body>
+        <ul id="list">
+
+        </ul>
+        <script>
+            //vetor
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+             // lê o elemento <ul>
+            var desordList = document.getElementById('list');
+        
+            // a função for of faz o seguinte
+            //ela chama cada elemento da função nomes de "nome"
+                function renderNomes(){
+                    for( nome of nomes ){
+                        //cria uma variavel nomeElement(podeserqq nome)
+                        //essa variavel vai criar um elemento html chamado li
+                        //lembrando que document é uma função para alterar a DOM
+                        var nomeElement = 
+                        document.createElement('li');
+                        //a amesma coisa sobre a variavel mas agr se chama nomeText
+                        //o document altera a DOM
+                        //createTextNode gera uma string de texto com o elemento "nome"
+                        //que é um elemento do vetor nomes
+                        //ou seja, ele mostra cada um dos elementos de nomes
+                        var nomeText =
+                        document.createTextNode(nome);
+                        //fiz nomeText o filho de nomeElement
+                        nomeElement.appendChild(nomeText);
+                        //fiz de nomeElement o filho de desordList
+                        desordList.appendChild(nomeElement);
+                    }
+                }
+                //renderizei na tela a função
+            renderNomes();
+           
+        </script>
+    </body>
+</html>

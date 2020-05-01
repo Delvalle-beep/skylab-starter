@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Curso de Javascript</title>
+    </head>
+    <body>
+ 
+            <button onclick="criarElemento()" class="square">Gerar quadrado</button>
+        <div id="app">
+            <div class="box"></div>
+        </div>
+
+        <script>
+          var elementoNovo = document.getElementsByClassName('square');
+          function criarElemento(){
+              let boxElement = document.createElement('div');
+              boxElement.style.backgroundColor="#f00";
+              boxElement.style.margin="10px";
+              boxElement.style.width="100px";
+              boxElement.style.height="100px";
+
+              //adiciona a classe .box na div criada
+              boxElement.classList.add('box');
+                document.body.appendChild(boxElement);
+          }
+
+        </script>
+    </body>
+</html>
