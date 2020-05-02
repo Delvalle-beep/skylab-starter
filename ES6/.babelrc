@@ -1,5 +1,6 @@
 {
-    "presets": ["@babel/preset-env"]
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"]
 }
 //o preset env percebe o ambiente
 //de desenvolvimento e converte  o codigo
